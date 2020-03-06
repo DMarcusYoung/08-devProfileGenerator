@@ -100,7 +100,7 @@ const colors = {
            width: 95%;
            border-radius: 6px;
            }
-           .photo-header img {
+          img {
            width: 250px;
            height: 250px;
            border-radius: 50%;
@@ -170,7 +170,37 @@ const colors = {
               zoom: .75; 
             } 
            }
-        </style>`
+        </style>
+        <body>
+          <div class='container'>
+            <div class='card photo-header'
+              <img src="${data.avatar_url}" alt="Profile Pic">
+              <h1>${data.name}</h1>
+            </div>
+            <div class='card'>
+              ${data.location}
+              ||
+              <a href="${data.blog}">Blog</a>
+              ||
+              <a href="${data.html_url}">GitHub Profile</a>
+            </div>
+            <div class='card'>
+            Bio: ${data.bio}
+            </div>
+            <div class='card'>
+            Public Repositories: ${data.public_repos}
+            </div>
+            <div class='card'>
+            Followers: ${data.followers}
+            </div>
+            <div class='card'>
+            GitHub Stars: ${data.public_gists}
+            </div>
+            <div class='card'>
+            Following: ${data.following}
+            </div>
+          </div>
+        </body>`
           }
 
 module.exports = {
