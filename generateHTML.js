@@ -183,20 +183,20 @@ function generateHTML(data) {
               <a href="${data.blog}">Blog</a>
               ||
               <a href="${data.html_url}">GitHub Profile</a>
-            </h6>
-          </div>
-          <div class= "card">
-            Bio: ${data.bio}
-          </div>
-          <div class= "card">
-            Followers: ${data.followers}
-          </div>
-          <div class= "card">
-            Following: ${data.following}
-          </div>
-          <div class= "card">
-            Repositories: ${data.public_repos}
-          </div>
+              </h6>
+              </div>
+              <div class= "card">
+              Bio: ${data.bio}
+              </div>
+              <div class= "card">
+                Repositories: ${data.public_repos}
+              </div>
+              <div class= "card">
+              Followers: ${data.followers}
+              </div>
+              <div class= "card">
+              Following: ${data.following}
+              </div>
           <div class= "card">
             GitHub Stars: ${data.public_gists}
           </div>
