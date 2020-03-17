@@ -26,6 +26,15 @@ const colors = {
 };
 
 function generateHTML(data) {
+  if(data.name === null){
+    data.name = '';
+  }
+  if(data.bio === null){
+    data.bio = '';
+  }
+  if(data.location === null){
+    data.location = '';
+  }
   return `<!DOCTYPE html>
 <html lang="en">
    <head>
